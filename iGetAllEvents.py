@@ -12,7 +12,7 @@ answer = ""
 
 @client.event
 async def on_ready():
-    print('ล็อคอินด้วย Token สำเร็จ User ของคุณคือ: {0.user}'.format(client))
+    print('ล็อคอินด้วย Token สำเร็จ User ของคุณคือ: {0.user}'.format(client)) #print this when Login is success
 
 @client.event
 async def on_message(message):
@@ -21,7 +21,7 @@ async def on_message(message):
         print('ได้รับข้อความ A MEGALODON HAS SPAWNED IN THE RIVER')
         time.sleep(3)
         await message.channel.send('FISH') #This is message that reply when get event
-        print('ส่งข้อความ FISH สำเร็จ')
+        print('ส่งข้อความ FISH สำเร็จ') #print this when reply success
         answer = "fish"
         return answer
 
@@ -29,7 +29,7 @@ async def on_message(message):
         print('ได้รับข้อความ IT''S RAINING COINS')
         time.sleep(3)
         await message.channel.send('CATCH') #This is message that reply when get event
-        print('ส่งข้อความ CATCH สำเร็จ')
+        print('ส่งข้อความ CATCH สำเร็จ') #print this when reply success
         answer = "catch"
         return answer
 
@@ -37,7 +37,7 @@ async def on_message(message):
         print('ได้รับข้อความ AN EPIC TREE HAS JUST GROWN')
         time.sleep(3)
         await message.channel.send('CHOP') #This is message that reply when get event
-        print('ส่งข้อความ CHOP สำเร็จ')
+        print('ส่งข้อความ CHOP สำเร็จ') #print this when reply success
         answer = "chop"
         return answer
         
